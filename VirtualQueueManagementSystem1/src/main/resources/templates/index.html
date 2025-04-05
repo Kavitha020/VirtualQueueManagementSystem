@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome - Virtual Queue System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa, #b2dfdb);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: linear-gradient(90deg, #0288d1, #4fc3f7);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin: 0;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        .card {
+            background: linear-gradient(135deg, #e0f7fa, #b2dfdb);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .card-body {
+            padding: 40px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background: #0288d1;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 25px;
+            font-weight: 600;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+        .btn-primary:hover {
+            background: #0277bd;
+        }
+        .btn-success {
+            background: #4caf50;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 25px;
+            font-weight: 600;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+        .btn-success:hover {
+            background: #388e3c;
+        }
+        footer {
+            background: linear-gradient(90deg, #4fc3f7, #0288d1);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Virtual Queue</h1>
+        <p class="lead">Manage your queues efficiently and effortlessly</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Get Started</h2>
+                <p>Join our virtual queue system to streamline your experience.</p>
+                <a href="/login" class="btn btn-primary">Login</a>
+                <a href="/register" class="btn btn-success">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Virtual Queue Management System</p>
+    </footer>
+</body>
+</html>
